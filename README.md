@@ -2,7 +2,7 @@
 
 **AI Engineer | M.Sc. Artificial Intelligence | Multi-Agent Systems · LLMs · RAG Pipelines**
 
-Nablus, Palestinian Authority &nbsp;|&nbsp; orwajabali89@gmail.com &nbsp;|&nbsp; [linkedin.com/in/orwa-jabali-06259130a](https://www.linkedin.com/in/orwa-jabali-06259130a) &nbsp;|&nbsp; [github.com/orwajabali](https://github.com/orwajabali) &nbsp;|&nbsp; [🌐 CV Online](https://orwajabali.github.io/cv)
+Nablus, Palestinian Authority &nbsp;|&nbsp; orwajabali89@gmail.com &nbsp;|&nbsp; [linkedin.com/in/orwa-jabali-06259130a](https://www.linkedin.com/in/orwa-jabali-06259130a) &nbsp;|&nbsp; [github.com/orwajabali](https://github.com/orwajabali) &nbsp;|&nbsp; [🌐 CV Online](https://orwajabali.github.io/CV/)
 
 ---
 

@@ -7,47 +7,15 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap");
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: "Inter", -apple-system, sans-serif;
-    font-size: 11pt;
-    line-height: 1.55;
-    color: #1a1a2e;
-    background: #fff;
-    padding: 36px 48px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  h1 {
-    font-size: 26pt; font-weight: 700; color: #0f3460;
-    border-bottom: 3px solid #0f3460; padding-bottom: 6px;
-    margin-bottom: 4px; letter-spacing: -0.5px;
-  }
+  body { font-family: "Inter", -apple-system, sans-serif; font-size: 11pt; line-height: 1.55; color: #1a1a2e; background: #fff; padding: 36px 48px; max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 26pt; font-weight: 700; color: #0f3460; border-bottom: 3px solid #0f3460; padding-bottom: 6px; margin-bottom: 4px; }
   h1 + p strong { font-size: 11.5pt; color: #16213e; font-weight: 600; }
-  /* Contact line */
-  h1 + p + p {
-    font-size: 9.5pt; color: #444; margin-bottom: 4px;
-  }
-  /* Download bar */
-  .dl-bar {
-    background: #f0f4ff; border: 1px solid #c8d4f0; border-radius: 6px;
-    padding: 7px 14px; margin: 10px 0 18px 0;
-    font-size: 9.5pt; display: flex; align-items: center; gap: 18px;
-    flex-wrap: wrap;
-  }
-  .dl-bar a {
-    display: inline-flex; align-items: center; gap: 5px;
-    background: #0f3460; color: #fff; padding: 4px 12px;
-    border-radius: 4px; font-weight: 600; font-size: 9pt;
-    text-decoration: none;
-  }
-  .dl-bar a:hover { background: #16213e; }
+  h1 + p + p { font-size: 9.5pt; color: #444; margin-bottom: 4px; }
+  .dl-bar { background: #f0f4ff; border: 1px solid #c8d4f0; border-radius: 6px; padding: 7px 14px; margin: 10px 0 18px 0; font-size: 9.5pt; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .dl-bar a.btn { background: #0f3460; color: #fff; padding: 4px 12px; border-radius: 4px; font-weight: 600; font-size: 9pt; text-decoration: none; }
+  .dl-bar a.btn:hover { background: #16213e; }
   .dl-bar span { color: #555; }
-  h2 {
-    font-size: 13pt; font-weight: 700; color: #0f3460;
-    text-transform: uppercase; letter-spacing: 1px;
-    border-bottom: 1.5px solid #0f3460; padding-bottom: 3px;
-    margin-top: 22px; margin-bottom: 10px;
-  }
+  h2 { font-size: 13pt; font-weight: 700; color: #0f3460; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1.5px solid #0f3460; padding-bottom: 3px; margin-top: 22px; margin-bottom: 10px; }
   h3 { font-size: 11pt; font-weight: 600; color: #16213e; margin-top: 14px; margin-bottom: 2px; }
   p { margin-bottom: 4px; }
   a { color: #0f3460; text-decoration: none; }
@@ -62,11 +30,7 @@
   td:last-child { text-align: center; white-space: nowrap; }
   li strong { color: #0f3460; }
   hr { border: none; border-top: 1px solid #e0e5ef; margin: 10px 0 6px 0; }
-  h3 + p a {
-    font-family: "Fira Code", monospace; font-size: 9pt;
-    color: #533483; background: #f3f0ff; padding: 1px 6px;
-    border-radius: 3px; display: inline-block; margin-bottom: 4px;
-  }
+  h3 + p a { font-family: "Fira Code", monospace; font-size: 9pt; color: #533483; background: #f3f0ff; padding: 1px 6px; border-radius: 3px; display: inline-block; margin-bottom: 4px; }
   @media print {
     .dl-bar { display: none; }
     body { padding: 18px 24px; font-size: 10pt; }
@@ -81,7 +45,7 @@
 <body>
 <h1>Orwa Jabali</h1>
 <p><strong>AI Engineer | M.Sc. Artificial Intelligence | Multi-Agent Systems · LLMs · RAG Pipelines</strong></p>
-<p>Nablus, Palestinian Authority &nbsp;|&nbsp; orwajabali89@gmail.com &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/orwa-jabali-06259130a">linkedin.com/in/orwa-jabali-06259130a</a> &nbsp;|&nbsp; <a href="https://github.com/orwajabali">github.com/orwajabali</a> &nbsp;|&nbsp; <a href="https://orwajabali.github.io/cv">🌐 CV Online</a></p>
+<p>Nablus, Palestinian Authority &nbsp;|&nbsp; orwajabali89@gmail.com &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/orwa-jabali-06259130a">linkedin.com/in/orwa-jabali-06259130a</a> &nbsp;|&nbsp; <a href="https://github.com/orwajabali">github.com/orwajabali</a> &nbsp;|&nbsp; <a href="https://orwajabali.github.io/CV/">🌐 CV Online</a></p>
 <hr />
 <h2>Professional Summary</h2>
 <p>AI Engineer with an M.Sc. in Artificial Intelligence, specializing in Multi-Agent Systems, Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG). Experienced in designing and deploying end-to-end AI pipelines — from vector-based document retrieval and LLM orchestration to real-time data streaming. Combines strong research foundations with practical software engineering skills. Eager to contribute to international AI teams building intelligent, scalable systems.</p>
@@ -298,13 +262,12 @@
 <hr />
 <p><em>References available upon request.</em></p>
 <script>
-// Insert download bar after the contact line (3rd p after h1)
 document.addEventListener("DOMContentLoaded", function() {
-  const h1 = document.querySelector("h1");
-  const contactP = h1.nextElementSibling.nextElementSibling;
-  const bar = document.createElement("div");
+  var h1 = document.querySelector("h1");
+  var contactP = h1.nextElementSibling.nextElementSibling;
+  var bar = document.createElement("div");
   bar.className = "dl-bar";
-  bar.innerHTML = '<span>📄 Download:</span><a href="Orwa-Jabali-CV.pdf" download>⬇ PDF Version</a><span style="color:#888">|</span><span>🌐 Online: <a href="https://orwajabali.github.io/cv" style="background:none;color:#0f3460;padding:0;font-weight:400" target="_blank">orwajabali.github.io/cv</a></span>';
+  bar.innerHTML = '<span>Download:</span><a class="btn" href="Orwa-Jabali-CV.pdf" download>PDF Version</a><span style="color:#888">|</span><span>Online: <a href="https://orwajabali.github.io/CV/" target="_blank">orwajabali.github.io/CV</a></span>';
   contactP.after(bar);
 });
 </script>
