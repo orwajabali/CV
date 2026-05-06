@@ -18,26 +18,35 @@
     margin: 0 auto;
   }
   h1 {
-    font-size: 26pt;
-    font-weight: 700;
-    color: #0f3460;
-    border-bottom: 3px solid #0f3460;
-    padding-bottom: 6px;
-    margin-bottom: 4px;
-    letter-spacing: -0.5px;
+    font-size: 26pt; font-weight: 700; color: #0f3460;
+    border-bottom: 3px solid #0f3460; padding-bottom: 6px;
+    margin-bottom: 4px; letter-spacing: -0.5px;
   }
   h1 + p strong { font-size: 11.5pt; color: #16213e; font-weight: 600; }
-  h1 + p + p { font-size: 9.5pt; color: #444; margin-bottom: 18px; }
+  /* Contact line */
+  h1 + p + p {
+    font-size: 9.5pt; color: #444; margin-bottom: 4px;
+  }
+  /* Download bar */
+  .dl-bar {
+    background: #f0f4ff; border: 1px solid #c8d4f0; border-radius: 6px;
+    padding: 7px 14px; margin: 10px 0 18px 0;
+    font-size: 9.5pt; display: flex; align-items: center; gap: 18px;
+    flex-wrap: wrap;
+  }
+  .dl-bar a {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #0f3460; color: #fff; padding: 4px 12px;
+    border-radius: 4px; font-weight: 600; font-size: 9pt;
+    text-decoration: none;
+  }
+  .dl-bar a:hover { background: #16213e; }
+  .dl-bar span { color: #555; }
   h2 {
-    font-size: 13pt;
-    font-weight: 700;
-    color: #0f3460;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1.5px solid #0f3460;
-    padding-bottom: 3px;
-    margin-top: 22px;
-    margin-bottom: 10px;
+    font-size: 13pt; font-weight: 700; color: #0f3460;
+    text-transform: uppercase; letter-spacing: 1px;
+    border-bottom: 1.5px solid #0f3460; padding-bottom: 3px;
+    margin-top: 22px; margin-bottom: 10px;
   }
   h3 { font-size: 11pt; font-weight: 600; color: #16213e; margin-top: 14px; margin-bottom: 2px; }
   p { margin-bottom: 4px; }
@@ -54,16 +63,12 @@
   li strong { color: #0f3460; }
   hr { border: none; border-top: 1px solid #e0e5ef; margin: 10px 0 6px 0; }
   h3 + p a {
-    font-family: "Fira Code", monospace;
-    font-size: 9pt;
-    color: #533483;
-    background: #f3f0ff;
-    padding: 1px 6px;
-    border-radius: 3px;
-    display: inline-block;
-    margin-bottom: 4px;
+    font-family: "Fira Code", monospace; font-size: 9pt;
+    color: #533483; background: #f3f0ff; padding: 1px 6px;
+    border-radius: 3px; display: inline-block; margin-bottom: 4px;
   }
   @media print {
+    .dl-bar { display: none; }
     body { padding: 18px 24px; font-size: 10pt; }
     h1 { font-size: 22pt; }
     h2 { font-size: 11pt; page-break-after: avoid; }
@@ -292,5 +297,16 @@
 </ul>
 <hr />
 <p><em>References available upon request.</em></p>
+<script>
+// Insert download bar after the contact line (3rd p after h1)
+document.addEventListener("DOMContentLoaded", function() {
+  const h1 = document.querySelector("h1");
+  const contactP = h1.nextElementSibling.nextElementSibling;
+  const bar = document.createElement("div");
+  bar.className = "dl-bar";
+  bar.innerHTML = '<span>📄 Download:</span><a href="Orwa-Jabali-CV.pdf" download>⬇ PDF Version</a><span style="color:#888">|</span><span>🌐 Online: <a href="https://orwajabali.github.io/cv" style="background:none;color:#0f3460;padding:0;font-weight:400" target="_blank">orwajabali.github.io/cv</a></span>';
+  contactP.after(bar);
+});
+</script>
 </body>
 </html>
